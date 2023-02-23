@@ -1,19 +1,23 @@
 <template>
   <nav class="header-nav">
     <div class="header-nav__inner">
-      <p class="header-nav__text">Официальный сайт производителя</p>
-      <ul class="header-nav__bar nav-bar">
+      <ul class="header-nav__list nav-bar">
         <li class="nav-bar__inner">
-          <a href="#" class="nav-bar__link">Каталог</a>
-        </li>
-        <li class="nav-bar__inner">
-          <a href="#" class="nav-bar__link">О Компании</a>
+          <a href="#" class="nav-bar__link">О компании</a>
         </li>
         <li class="nav-bar__inner">
           <a href="#" class="nav-bar__link">Контакты</a>
         </li>
         <li class="nav-bar__inner">
-          <a href="#" class="nav-bar__link">Тех. Документация</a>
+          <a href="#" class="nav-bar__link">Тех. документация</a>
+        </li>
+      </ul>
+      <ul class="header-nav__list contact-bar">
+        <li>
+          <a href="tel:+7(863)2266103">+7(863) 226 61 03</a>
+        </li>
+        <li>
+          <a href="#" class="header-info__whatsapp"></a>
         </li>
       </ul>
     </div>
@@ -23,30 +27,22 @@
 export default {};
 </script>
 <style lang="scss" scoped>
-@import "~/assets/styles/color";
-@import "~/assets/styles/grid";
-.header {
-  &-nav {
-    background-color: $corporate-blue;
-    &__inner {
-      @include grid;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    &__text {
-      color: #fff;
-    }
+@import "@/assets/styles/grid";
+.header-nav {
+  &__inner {
+    @include grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
   }
 }
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
-  width: 564px;
+  width: 416px;
   &__link {
-    color: #fff;
     text-decoration: none;
   }
 }
