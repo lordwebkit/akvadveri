@@ -39,7 +39,7 @@ export default {
     border-radius: 2px;
     color: #fff;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     background-size: contain;
   }
   &__banner-1 {
@@ -50,7 +50,7 @@ export default {
   &__banner-2 {
     grid-row-start: 2;
     grid-row-end: 3;
-    align-self: end;
+    align-self: flex-end;
     background-image: url("@/assets/images/main-banner-2.jpg");
   }
   &__slider {
