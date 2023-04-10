@@ -18,14 +18,12 @@
           </a>
         </li>
       </ul>
-      <div class="header-nav__list contact-bar">
-        <a href="#" class="contact-bar__whatsapp"></a>
-        <a class="contact-bar__phone" href="tel:+7(863)2266103">
-          +7(863) 226 61 03
-        </a>
-        <p class="contact-bar__time">
-          Пн - Пт: c <span class="contact-bar__hours">07:00</span> до
-          <span class="contact-bar__hours">22:00</span>
+      <div class="header-nav__work-schedule work-shedule">
+        <span class="work-shedule__icon"></span>
+        <p class="work-shedule__text">
+          График работы Пн - Пт: c
+          <span class="work-shedule__time">07:00</span> до
+          <span class="work-shedule__time">22:00</span>
         </p>
       </div>
     </div>
@@ -66,7 +64,7 @@ export default {};
   &__decore {
     width: 100%;
     height: 2px;
-    background-color: $corporate-blue;
+    background-color: $blue;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -75,31 +73,21 @@ export default {};
     transition: opacity 0.3s ease;
   }
 }
-.contact-bar {
+.work-shedule {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 335px;
-  &__phone {
-    text-decoration: none;
-    color: $corporate-blue;
-  }
-  &__whatsapp {
+  &__icon {
+    display: inline-block;
     width: 22px;
     height: 22px;
-    display: inline-block;
-    border-radius: 2px;
-    background-image: url("@/assets/icons/whatsapp-green.svg");
-    background-repeat: no-repeat;
+    background-image: url("@/assets/icons/work-shedule.svg");
+    margin-right: 10px;
+  }
+  &__text {
+    font-size: 14px;
   }
   &__time {
-    font-size: 12px;
-    border-left: 1px solid $corporate-blue;
-    padding-left: 10px;
-  }
-  &__hours {
-    color: $corporate-blue;
-    font-weight: 700;
+    color: $blue;
   }
 }
 </style>
