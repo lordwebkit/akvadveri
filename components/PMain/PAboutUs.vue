@@ -51,6 +51,8 @@ export default {};
 .advantages {
   display: flex;
   justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
   &__item {
     display: grid;
     flex: 25%;
@@ -58,7 +60,8 @@ export default {};
   &__title {
     grid-row-start: 1;
     grid-row-end: 2;
-    color: $corporate-blue;
+    color: $blue;
+    font-size: 18px;
   }
   &__text {
     margin-top: 4px;
@@ -67,11 +70,12 @@ export default {};
     grid-row-end: 3;
     grid-column-start: 2;
     font-size: 14px;
+    line-height: 1;
   }
   &__icon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
