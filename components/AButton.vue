@@ -14,11 +14,11 @@ export default {
   transition: all 0.2s ease;
   padding: 18px 26px;
   background-color: transparent;
-  color: $corporate-blue;
-  border: 1px solid $corporate-blue;
+  color: $blue;
+  border: 1px solid $blue;
   cursor: pointer;
   &:hover {
-    background-color: $corporate-blue;
+    background-color: $blue;
     color: #fff;
   }
 }

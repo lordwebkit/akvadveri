@@ -65,7 +65,7 @@ export default {
     margin-left: 15px;
     font-size: 18px;
     background-color: #fff;
-    color: $corporate-blue;
+    color: $blue;
     padding: 5px 8px;
     border-radius: 2px;
   }

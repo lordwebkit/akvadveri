@@ -2,8 +2,7 @@
   <div class="slider-slide">
     <div class="slider-slide__inner">
       <h1 class="slider-slide__title">
-        <span class="slider-slide__company">ООО “АкваДверь”</span>
-        межкомнатные двери
+        <span class="slider-slide__company">АкваДверь</span>
       </h1>
       <p class="slider-slide__text">
         Производство и продажа царговых дверей из ДПК
@@ -34,7 +33,7 @@ export default {};
   }
   &__company {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 42px;
   }
   &__text {
     font-size: 22px;
