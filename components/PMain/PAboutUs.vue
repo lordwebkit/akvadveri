@@ -1,6 +1,7 @@
 <template>
   <section class="about-us">
     <div class="about-us__inner">
+      <h2 class="about-us__title">Наша компания это</h2>
       <ul class="about-us__advantages advantages">
         <li class="advantages__item">
           <h3 class="advantages__title">Свое производство</h3>
@@ -42,16 +43,32 @@ export default {};
 @import "@/assets/styles/grid";
 @import "~/assets/styles/color";
 .about-us {
+  margin-top: 30px;
+  background: $light-blue;
+  padding: 1px 0 40px 0;
   font-family: "Montserrat", sans-serif;
   &__inner {
     @include grid;
     margin-top: 30px;
   }
+  &__title {
+    font-size: 30px;
+    color: $blue;
+    margin-bottom: 5px;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 80px;
+      background-color: $blue;
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 15px;
+    }
+  }
 }
 .advantages {
   display: flex;
   justify-content: space-between;
-  width: 95%;
   margin: 0 auto;
   &__item {
     display: grid;
@@ -62,6 +79,7 @@ export default {};
     grid-row-end: 2;
     color: $blue;
     font-size: 18px;
+    font-weight: bold;
   }
   &__text {
     margin-top: 4px;
