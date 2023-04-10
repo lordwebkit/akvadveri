@@ -13,7 +13,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .slider {
-  width: 1014px;
+  width: 952px;
   height: 569px;
   border-radius: 2px;
 }

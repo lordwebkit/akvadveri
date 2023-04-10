@@ -3,7 +3,7 @@
     <div class="main__inner">
       <ASlider class="main__slider" />
       <div class="main__banner main__banner-1 main-banner">
-        <p class="main-banner__title">ПВХ Композит</p>
+        <p class="main-banner__title">Наши проекты</p>
       </div>
       <div class="main__banner main__banner-2 main-banner">
         <p class="main-banner__title">Все о компании</p>
@@ -30,7 +30,7 @@ export default {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-items: flex-end;
   }
   &__banner {
     width: 287px;

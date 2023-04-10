@@ -74,7 +74,7 @@ export default {};
     }
   }
   &__find {
-    width: 550px;
+    width: 500px;
     height: 37px;
     border-radius: 2px;
     border: none;
@@ -104,8 +104,8 @@ export default {};
   align-items: center;
   flex: 1;
   &__phone {
-    margin-left: 80px;
-    margin-right: 30px;
+    margin-left: 33px;
+    margin-right: 33px;
   }
 }
 
