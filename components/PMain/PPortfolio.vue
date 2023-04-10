@@ -31,11 +31,23 @@ export default {};
     font-size: 30px;
     color: $blue;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    word-wrap: break-word;
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $blue;
+      display: inline-block;
+      margin-left: 10px;
+    }
   }
 }
 .partfolio-slider {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
   padding-bottom: 30px;
   &__item {
